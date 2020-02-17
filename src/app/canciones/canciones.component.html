@@ -3,9 +3,9 @@
   <div class="filtro col-sm-2">
 
     <h2>Buscar:</h2>
-    
+
     <input [(ngModel)]="searchText" placeholder="Cancion, álbum, artista, genero...">
-    
+
     <mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
     <mat-icon aria-hidden="false" aria-label="Example home icon">headset_mic</mat-icon>
 
@@ -16,11 +16,11 @@
     <button mat-menu-item>Top Ventas</button>
     <button mat-menu-item>Top Descargas</button>
  </mat-menu>
- 
+
  <button class="left col-sm-2" mat-flat-button [matMenuTriggerFor]="appMenu">Canciones
-  <mat-icon aria-hidden="false" aria-label="Example home icon">queue_music</mat-icon> 
+  <mat-icon aria-hidden="false" aria-label="Example home icon">queue_music</mat-icon>
  </button>
- 
+
   <mat-menu #subMenu="matMenu">
   <mat-icon aria-hidden="false" aria-label="Example home icon">local_play</mat-icon>
    <button mat-menu-item>Pop</button>
@@ -32,7 +32,7 @@
 
   </div>
 
-   
+
 
 <div class="canciones col-sm-10">
   <div class="row">
@@ -59,4 +59,3 @@
   </div>
 
 </div>
-

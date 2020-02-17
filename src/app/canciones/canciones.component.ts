@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cancion } from '../cancion';
-import { CANCIONES } from '../mock-canciones';
+import { ListadoService } from '../listado.service';
 import { FilterPipe } from '../filter.pipe';
 
 @Component({
@@ -10,18 +10,27 @@ import { FilterPipe } from '../filter.pipe';
 })
 export class CancionesComponent implements OnInit {
 
-  canciones = CANCIONES;
+  canciones : Cancion[];
   selectedCancion: Cancion;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   onSelect(cancion: Cancion): void {
     this.selectedCancion = cancion;
   }
 
-}
+  getCanciones(): void {
+  this.listadoService.getCanciones()
+    .subscribe(
+      canciones =>
+      this.canciones = canciones
+    );
+  }
 
-console.log(CANCIONES);
+  constructor(private listadoService: ListadoService) { }
+
+  ngOnInit() {
+    this.getCanciones();
+  }
+
+
+
+}

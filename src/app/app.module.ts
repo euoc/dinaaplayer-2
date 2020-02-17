@@ -10,13 +10,15 @@ import { FilterPipe } from './filter.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CancionesComponent,
     CancionDetalleComponent,
-    FilterPipe
+    FilterPipe,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
