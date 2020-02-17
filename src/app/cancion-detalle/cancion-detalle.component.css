@@ -1,0 +1,27 @@
+.detail {
+  background-size:100%;
+  height:100%;
+  position:relative;
+}
+  .detail h3 {
+      color:white;
+      width:auto;
+     
+      font-size:12px;
+      margin:3px;
+      padding-left:15px;
+  }
+.imagenDetail {
+width:100%;
+}
+.info {
+  position: absolute;
+  background-color: #1498149e;
+  bottom: 0;
+  width: -webkit-fill-available;
+}
+
+audio {
+
+width:inherit;
+}

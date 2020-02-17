@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\cancion-detalle",
+    "\\src\\app\\canciones"
+  ],
+  "SelectedNode": "\\src\\app\\canciones\\canciones.component.ts",
+  "PreviewInSolutionExplorer": false
+}

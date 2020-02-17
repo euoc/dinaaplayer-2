@@ -1,0 +1,62 @@
+
+
+  <div class="filtro col-sm-2">
+
+    <h2>Buscar:</h2>
+    
+    <input [(ngModel)]="searchText" placeholder="Cancion, álbum, artista, genero...">
+    
+    <mat-menu #appMenu="matMenu" xPosition="after" yPosition="above">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">headset_mic</mat-icon>
+
+    <button mat-menu-item [matMenuTriggerFor]="subMenu">Genero</button>
+    <button mat-menu-item>Favoritos</button>
+    <button mat-menu-item>Exitos</button>
+    <button mat-menu-item>Actualidad</button>
+    <button mat-menu-item>Top Ventas</button>
+    <button mat-menu-item>Top Descargas</button>
+ </mat-menu>
+ 
+ <button class="left col-sm-2" mat-flat-button [matMenuTriggerFor]="appMenu">Canciones
+  <mat-icon aria-hidden="false" aria-label="Example home icon">queue_music</mat-icon> 
+ </button>
+ 
+  <mat-menu #subMenu="matMenu">
+  <mat-icon aria-hidden="false" aria-label="Example home icon">local_play</mat-icon>
+   <button mat-menu-item>Pop</button>
+   <button mat-menu-item>Rock</button>
+   <button mat-menu-item>Latino</button>
+   <button mat-menu-item>Española</button>
+   <button mat-menu-item>Clasica</button>
+ </mat-menu>
+
+  </div>
+
+   
+
+<div class="canciones col-sm-10">
+  <div class="row">
+    <div class="text-center top">
+      <h1>DinAAplayer</h1>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12" >
+      <app-cancion-detalle class="col-sm-4 col-sm-offset-4" [cancion]="selectedCancion"></app-cancion-detalle>
+
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-sm-3 gridSong nopadding" *ngFor="let cancion of canciones | filter: {name: searchText, artista: searchText, album: searchText, genero: searchText}"
+         [class.selected]="cancion === selectedCancion"
+         (click)="onSelect(cancion)">
+      <img class="gridSong2" src="{{cancion.cover}}" />
+      <span class="absolute"> {{cancion.name}}</span>
+    </div>
+  </div>
+
+</div>
+

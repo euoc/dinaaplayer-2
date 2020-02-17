@@ -1,0 +1,76 @@
+/* CancionesComponent's private CSS styles */
+
+
+h1 {
+    color:white;
+}
+.top {
+  background-color: #01ea0194;
+  padding:5px 0;
+}
+.gridSong {
+    position:relative;
+    float:right;
+}
+.gridSong span {
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-color:white;
+}
+
+
+  .canciones li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .caniones li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .canciones li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  .canciones li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+  
+
+.filtro {
+  background-color: #01ea0194;
+  height:100vh;
+  border-right:1px solid black;
+}
+  .filtro ul {
+      list-style:none;
+      text-transform:capitalize;
+      margin-top:25px;
+  }
+    .filtro ul li {
+      
+        margin-right:10px;
+        color:white;
+    }
+
+
+
+.gridSong2 {
+  width: 100%;
+}
+.absolute {
+padding:0 15px;
+}
+.left {
+  margin: 2rem;
+  background-color:white;
+  width: 50%;
+}

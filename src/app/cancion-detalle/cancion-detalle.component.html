@@ -1,0 +1,26 @@
+
+<div *ngIf="cancion" class="detail" >
+
+  <div class="detail">
+    <img class="imagenDetail" src="{{cancion.cover}}" />
+
+
+    <div class="info">
+      <h3><strong>{{cancion.name | uppercase}}</strong> </h3>
+      <!-- AÑADIDO -->
+      <h3>{{cancion.artista}}</h3>
+      <h3>{{cancion.album}}</h3>
+      <h3>{{cancion.genero}}</h3>
+      <h3>{{cancion.year}}</h3>
+      <audio autoplay controls src="{{cancion.track}}" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+  
+    
+  </div>
+
+
+
+</div>
+
