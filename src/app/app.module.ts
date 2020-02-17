@@ -8,6 +8,7 @@ import { CancionesComponent } from './canciones/canciones.component';
 import { CancionDetalleComponent } from './cancion-detalle/cancion-detalle.component';
 import { FilterPipe } from './filter.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { PlayerComponent } from './player/player.component';

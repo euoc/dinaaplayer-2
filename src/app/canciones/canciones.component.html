@@ -54,7 +54,10 @@
          [class.selected]="cancion === selectedCancion"
          (click)="onSelect(cancion)">
       <img class="gridSong2" src="{{cancion.cover}}" />
-      <span class="absolute"> {{cancion.name}}</span>
+      <span class="absolute">
+      <strong>{{cancion.name}}</strong>
+      <br>
+      {{cancion.artista}}</span>
     </div>
   </div>
 
