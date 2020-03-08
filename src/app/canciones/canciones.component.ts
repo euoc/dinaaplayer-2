@@ -3,6 +3,9 @@ import { Cancion } from '../cancion';
 import { ListadoService } from '../listado.service';
 import { FilterPipe } from '../filter.pipe';
 
+
+
+
 @Component({
   selector: 'app-canciones',
   templateUrl: './canciones.component.html',
@@ -10,7 +13,7 @@ import { FilterPipe } from '../filter.pipe';
 })
 export class CancionesComponent implements OnInit {
 
-  canciones : Cancion[];
+  canciones;
   selectedCancion: Cancion;
 
   onSelect(cancion: Cancion): void {
@@ -30,7 +33,5 @@ export class CancionesComponent implements OnInit {
   ngOnInit() {
     this.getCanciones();
   }
-
-
 
 }

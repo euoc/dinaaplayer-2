@@ -1,5 +1,10 @@
 import { Cancion } from './cancion';
 import { FilterPipe } from './filter.pipe';
+// import * as firebase from "firebase";
+import {environment} from '../environments/environment';
+// firebase.initializeApp(environment.firebase);
+
+
 
 export const CANCIONES: Cancion[] = [
   { id: 1, name: 'Smells Like Teen Spirit', artista: 'Nirvana', album: 'Official Live at Reading', year: 1992, genero: 'Grunge', track: './assets/smells-like-teen-spirit.mp3', cover:'./assets/nevermind.jpg' },
